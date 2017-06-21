@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>RadioHead</h1>
+  </header>
+
+  <nav id="main">
+    <ul>
+      <li class="logo"><a href="#">RadioHead</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Maps</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-wrap">
+      <p>OK Computer is the third studio album by English <a href="">alternative rock</a> band <a href="">Radiohead</a>, released in 1997 on <a href="">EMI</a> subsidiaries <a href="">Parlophone</a> and <a href="">Capitol Records</a>. The members of Radiohead self-produced the album with <a href="">Nigel Godrich</a>, an arrangement that the band has used on all of their subsequent albums to date. Other than "<a href="">Lucky</a>, which was recorded in 1995, Radiohead recorded the album in <a href="">Oxfordshire</a> and <a href="">Bath</a> between 1996 and early 1997, mostly in the historic mansion <a href="">St.</a> <a href="">Catherine's Court</a>. The band made a deliberate attempt to distance themselves from the guitar-oriented, lyrically introspective style of their previous album, <a href="">The Bends</a>. OK Computer's abstract lyrics, densely layered sound and eclectic range of influences laid the groundwork for Radiohead's later, more experimental work.</p><img src="http://unsplash.it/400/400" class="align-left slide-in">
+
+      <p>Upon the album's delivery to EMI and its global subsidiary distributors, label representatives generally lowered their sales estimates, deeming the record's sound uncommercial and difficult to market. Nevertheless, OK Computer reached number one on the <a href="">UK Albums Chart</a> and became the band's highest album entry on the American charts at the time, debuting at number 21 on the <a href="">Billboard 200</a>. Four songs from the album—"<a href="">Paranoid Android</a>", "<a href="">Karma Police</a>", "<a href="">Lucky</a>", and "<a href="">No Surprises</a>"—were released as promotional singles. The album expanded Radiohead's international popularity and has sold more than 4.5 million copies worldwide. A remastered reissue with additional tracks, OKNOTOK, is scheduled for release in June 2017, commemorating the album's twentieth anniversary.</p><img src="http://unsplash.it/400/400" class="align-right slide-in">
+
+      <p>OK Computer received widespread critical acclaim and in subsequent years has been cited by listeners, critics and musicians as one of the greatest albums of all time. The album initiated a stylistic shift in British rock away from the then-ubiquitous genre of <a href="">Britpop</a> toward melancholic, atmospheric styles of alternative and <a href="">indie rock</a> that became more prevalent in the next decade. Critics and fans have noted that the album's lyrics and music depict a world fraught with rampant <a href="">consumerism</a>, social alienation, emotional isolation and political malaise; in this capacity, OK Computer is often interpreted as having prescient insight into the mood of 21st-century life.</p><img src="http://unsplash.it/400/400" class="align-right slide-in">
+    </div>
+
+  <script>
+    const nav = document.querySelector('#main');
+    let topOfNav = nav.offsetTop;
+
+    function fixNav() {
+      if(window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.classList.remove('fixed-nav');
+        document.body.style.paddingTop = 0;
+      }
+    }
+
+    window.addEventListener('scroll', fixNav);
+
+  </script>
+
+
+</body>
+</html>
